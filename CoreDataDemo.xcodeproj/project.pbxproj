@@ -12,7 +12,7 @@
 		A8AF2C8C25F933B000735B15 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AF2C8A25F933B000735B15 /* CoreDataDemo.xcdatamodeld */; };
 		A8AF2C8E25F933B300735B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AF2C8D25F933B300735B15 /* Assets.xcassets */; };
 		A8AF2C9125F933B300735B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AF2C8F25F933B300735B15 /* LaunchScreen.storyboard */; };
-		A8AF2C9F25F93BDA00735B15 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF2C9E25F93BDA00735B15 /* NewTaskViewController.swift */; };
+		FF48E70225FD2CFC00625946 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48E70125FD2CFC00625946 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		A8AF2C8D25F933B300735B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AF2C9025F933B300735B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AF2C9225F933B300735B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8AF2C9E25F93BDA00735B15 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		FF48E70125FD2CFC00625946 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		A8AF2C8025F933B000735B15 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A8AF2C8125F933B000735B15 /* AppDelegate.swift */,
-				A8AF2C8525F933B000735B15 /* TaskListViewController.swift */,
-				A8AF2C9E25F93BDA00735B15 /* NewTaskViewController.swift */,
-				A8AF2C8D25F933B300735B15 /* Assets.xcassets */,
-				A8AF2C8F25F933B300735B15 /* LaunchScreen.storyboard */,
-				A8AF2C9225F933B300735B15 /* Info.plist */,
-				A8AF2C8A25F933B000735B15 /* CoreDataDemo.xcdatamodeld */,
+				FF48E70825FD708B00625946 /* SupportingFiles */,
+				FF48E70625FD6FED00625946 /* ViewControllers */,
+				FF48E70F25FD714F00625946 /* Source */,
+				FF48E70E25FD714200625946 /* Storyboards */,
+				FF48E70B25FD710600625946 /* CoreDataModel */,
+				FF48E70D25FD712B00625946 /* Services */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		FF48E70625FD6FED00625946 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF2C8525F933B000735B15 /* TaskListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF48E70825FD708B00625946 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF2C8125F933B000735B15 /* AppDelegate.swift */,
+				A8AF2C9225F933B300735B15 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FF48E70B25FD710600625946 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF2C8A25F933B000735B15 /* CoreDataDemo.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		FF48E70D25FD712B00625946 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF48E70125FD2CFC00625946 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF48E70E25FD714200625946 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF2C8F25F933B300735B15 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF48E70F25FD714F00625946 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF2C8D25F933B300735B15 /* Assets.xcassets */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +186,7 @@
 			files = (
 				A8AF2C8625F933B000735B15 /* TaskListViewController.swift in Sources */,
 				A8AF2C8C25F933B000735B15 /* CoreDataDemo.xcdatamodeld in Sources */,
-				A8AF2C9F25F93BDA00735B15 /* NewTaskViewController.swift in Sources */,
+				FF48E70225FD2CFC00625946 /* StorageManager.swift in Sources */,
 				A8AF2C8225F933B000735B15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				INFOPLIST_FILE = CoreDataDemo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				INFOPLIST_FILE = CoreDataDemo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
